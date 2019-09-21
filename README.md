@@ -6,11 +6,11 @@ This example demonstrates how to invoke a function on Oracle Functions using
 
 ## Introduction
 
-To be specifc, it shows how you can invoke a function by its name along with the
-name of the application name it belongs to, the OCI compartment containing the
-application, and the OCID of your tenancy.
+To be specific, it shows how you can invoke a function by its name along with
+the name of the application name it belongs to, the OCI compartment
+containing the application, and the OCID of your tenancy.
 
-The OCI SDK exposes two endpoints specificially for Oracle Functions
+The OCI SDK exposes two endpoints specifically for Oracle Functions
 
 - `FunctionsManagementClient` - for CRUD operations e.g., creating applications,
   listing functions etc.
@@ -84,28 +84,11 @@ practices i.e., a config file in your home directory, you can use the
    Create a function using [Go Hello World
    Function](https://github.com/abhirockzz/oracle-functions-hello-worlds/blob/master/golang-hello-world.md)
 
-### Install preview OCI Java SDK
-
-As this example uses Maven, you need to install the OCI SDK JAR to your local
-Maven repository.
-
-1. Download and unzip the preview version of the OCI Java SDK
-
-        unzip oci-java-sdk-dist-1.5.7-preview1-20190524.232748-4.zip
-
-2. Change into the correct directory
-
-        cd oci-java-sdk-dist-1.5.7-preview1-20190524.232748-4
-
-3. Install the JAR to local Maven repo
-
-        mvn install:install-file -Dfile=lib/oci-java-sdk-full-1.5.7-preview1-SNAPSHOT.jar -DgroupId=com.oracle.oci.sdk -DartifactId=oci-java-sdk -Dversion=1.5.7-preview1-20190524.232748-4 -Dpackaging=jar
-
 ### Build the JAR and configure environment variables
 
 1. Clone this repository
 
-   `git clone https://github.com/abhirockzz/fn-java-sdk-invoke`
+   `git clone https://github.com/<github-user-name>>/fn-java-sdk-invoke`
 
 2. Change to the correct directory where you cloned the example: 
 
